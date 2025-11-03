@@ -233,7 +233,7 @@ def main():
     detector.train(train_folder)
     
     # Analyze images
-    input_folder = "images_all"
+    input_folder = "images_inference"
     output_folder = "anomaly_output"
     
     if not os.path.exists(input_folder):
@@ -244,4 +244,5 @@ def main():
     print(f"Analysis complete! Results saved to '{output_folder}'")
 
 if __name__ == "__main__":
+
     main()
